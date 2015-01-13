@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nav_drawer_items">
+        <item>Dashboard</item>
+        <item>My Ticket</item>
+        <item>Help</item>
+        <item>Logout</item>
+    </string-array>
+    <array name="nav_drawer_icons">
+        <item>@drawable/icon_dashboard</item>
+        <item>@drawable/icon_myticket</item>
+        <item>@drawable/icon_help</item>
+        <item>@drawable/icon_about</item>
+        <item>@drawable/icon_logout</item>
+    </array>
+</resources>

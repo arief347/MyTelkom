@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme" parent="@*android:style/Theme.Light" />
+    <style name="AppTheme" parent="@style/AppBaseTheme">
+        <item name="android:actionBarStyle">@style/MyTheme.ActionBarStyle</item>
+        <item name="android:homeAsUpIndicator">@drawable/arrow_home_up</item>
+    </style>
+    <style name="MyTheme.ActionBarStyle" parent="@*android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">#ffe02925</item>
+        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+        <item name="android:actionMenuTextColor">@*android:color/white</item>
+    </style>
+    <style name="MyTheme.ActionBar.TitleTextStyle" parent="@*android:style/Widget.ExpandableListView.White">
+        <item name="android:textColor">@*android:color/white</item>
+    </style>
+</resources>

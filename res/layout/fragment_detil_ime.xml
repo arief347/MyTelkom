@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@*android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/txtDetilImeName" android:background="@*android:color/black" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Rapat Koordinasi Proyek" android:singleLine="true" android:layout_alignParentTop="true" fontPath="fonts/MyriadPro-Semibold.otf" />
+    <TextView android:textSize="15.0sp" android:textColor="@*android:color/black" android:gravity="left" android:layout_gravity="center" android:id="@id/txtDetilImePackage" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Telkom Connect Description" android:layout_below="@id/txtDetilImeName" />
+    <TextView android:textSize="14.0sp" android:textColor="@*android:color/black" android:gravity="left" android:layout_gravity="center" android:id="@id/txtDetilImeDescription" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Rapat Koordinasi Proyek" android:layout_below="@id/txtDetilImePackage" />
+    <Button android:textColor="@*android:color/white" android:gravity="center" android:id="@id/btnDetilImeDelete" android:background="@drawable/btn_general" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="Delete" android:layout_alignParentBottom="true" />
+</RelativeLayout>

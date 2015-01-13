@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/lvConferenceRoom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@*android:color/transparent" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <Button android:textColor="@*android:color/white" android:layout_gravity="center" android:id="@id/btnSubscriber" android:background="@drawable/btn_general" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="Subscriber" android:layout_weight="0.5" />
+        <View android:background="@*android:color/white" android:layout_width="1.0dip" android:layout_height="48.0dip" />
+        <Button android:textColor="@*android:color/white" android:layout_gravity="center" android:id="@id/btnHeaderConferenceRoom" android:background="@drawable/btn_general" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="Akhiri" android:layout_weight="0.5" />
+    </LinearLayout>
+</LinearLayout>

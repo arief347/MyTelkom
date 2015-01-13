@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/indicator" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <include android:id="@id/viewError" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" layout="@layout/error_handle_layout" />
+    <LinearLayout android:orientation="vertical" android:id="@id/lnContent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true">
+        <ScrollView android:id="@id/sc_detail" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@*android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/txtDetilConferenceName" android:background="@*android:color/black" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Rapat Koordinasi Proyek" android:singleLine="true" fontPath="fonts/MyriadPro-Semibold.otf" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="80.0dip" android:baselineAligned="false">
+                    <LinearLayout android:orientation="vertical" android:background="@color/abu_gelap" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_weight="0.5">
+                        <TextView android:textSize="10.0sp" android:textColor="@*android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="Hubungi" />
+                        <TextView android:textSize="20.0sp" android:textColor="@*android:color/white" android:gravity="center" android:id="@id/txtDetilConferencePhone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="08041000" fontPath="fonts/MyriadPro-Semibold.otf" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@color/abu_terang" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_weight="0.5">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip">
+                            <TextView android:textSize="10.0sp" android:textColor="@*android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Conference ID" android:layout_weight="0.5" />
+                            <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@*android:color/white" android:ellipsize="end" android:gravity="center" android:id="@id/txtDetilConferenceID" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="159966" android:singleLine="true" android:layout_weight="0.5" fontPath="fonts/MyriadPro-Semibold.otf" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip">
+                            <TextView android:textSize="9.0sp" android:textColor="@*android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Pass Moderator" android:layout_weight="0.5" />
+                            <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@*android:color/white" android:ellipsize="end" android:gravity="center" android:id="@id/txtDetilConferencePassModerator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0349#" android:singleLine="true" android:layout_weight="0.5" fontPath="fonts/MyriadPro-Semibold.otf" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="9.0dip">
+                            <TextView android:textSize="10.0sp" android:textColor="@*android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Pass Peserta" android:layout_weight="0.5" />
+                            <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@*android:color/white" android:ellipsize="end" android:gravity="center" android:id="@id/txtDetilConferencePassPeserta" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="4121#" android:singleLine="true" android:layout_weight="0.5" fontPath="fonts/MyriadPro-Semibold.otf" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+                        <TextView android:textSize="12.0sp" android:textColor="@color/soft_grey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Moderator" android:layout_weight="0.5" />
+                        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@*android:color/black" android:gravity="left" android:id="@id/txtDetilConferenceModeratorName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Irvanhasbi" android:layout_weight="0.5" fontPath="fonts/MyriadPro-Semibold.otf" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+                        <TextView android:textSize="12.0sp" android:textColor="@color/soft_grey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Durasi" android:layout_weight="0.5" />
+                        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@*android:color/black" android:gravity="left" android:id="@id/txtDetilConferenceModeratorDurasi" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="30 Menit" android:layout_weight="0.5" fontPath="fonts/MyriadPro-Semibold.otf" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/soft_grey" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="vertical" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@*android:color/black" android:gravity="left" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Peserta Konferensi" android:singleLine="true" fontPath="fonts/MyriadPro-Semibold.otf" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:layout_marginBottom="5.0dip">
+                        <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@*android:color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Nama" android:layout_weight="0.5" fontPath="fonts/MyriadPro-Semibold.otf" />
+                        <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@*android:color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Email" android:layout_weight="0.5" fontPath="fonts/MyriadPro-Semibold.otf" />
+                        <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@*android:color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Nomor HP" android:layout_weight="0.5" fontPath="fonts/MyriadPro-Semibold.otf" />
+                    </LinearLayout>
+                    <View android:background="@color/soft_grey" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/lnDetailConferenceItem" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:orientation="horizontal" android:id="@id/lnScheduledConferencePanel" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <Button android:textColor="@*android:color/white" android:layout_gravity="center" android:id="@id/btnModifyConference" android:background="@drawable/btn_general" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="Edit" android:layout_weight="0.5" />
+            <View android:background="@*android:color/white" android:layout_width="1.0dip" android:layout_height="48.0dip" />
+            <Button android:textColor="@*android:color/white" android:layout_gravity="center" android:id="@id/btnCancelConference" android:background="@drawable/btn_general" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="Batalkan" android:layout_weight="0.5" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/lnDetailConference" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <Button android:textSize="12.0sp" android:textColor="@*android:color/white" android:layout_gravity="center" android:id="@id/btnCallConference" android:background="@drawable/btn_general" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Telepon" android:layout_weight="0.5" />
+            <View android:background="@*android:color/white" android:layout_width="1.0dip" android:layout_height="48.0dip" />
+            <Button android:textSize="12.0sp" android:textColor="@*android:color/white" android:layout_gravity="center" android:id="@id/btnDetailConference" android:background="@drawable/btn_general" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Ruang Konferensi" android:layout_weight="0.5" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

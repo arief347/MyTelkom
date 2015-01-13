@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@*android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scContent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textColor="@*android:color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="8.0dip" android:text="Nama Konferensi" fontPath="fonts/MyriadPro-Semibold.otf" />
+            <EditText android:id="@id/edtCreateNewConfName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:inputType="textCapSentences" />
+            <TextView android:textColor="@*android:color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="8.0dip" android:text="Jenis Konferensi" fontPath="fonts/MyriadPro-Semibold.otf" />
+            <Spinner android:id="@id/spnCreateNewConfType" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginBottom="8.0dip" android:spinnerMode="dropdown" />
+            <LinearLayout android:orientation="vertical" android:id="@id/lnConferenceTime" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@*android:color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="8.0dip" android:text="Tanggal" fontPath="fonts/MyriadPro-Semibold.otf" />
+                <EditText android:enabled="false" android:id="@id/edtCreateNewConfDate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+                <Button android:textColor="@*android:color/black" android:layout_gravity="right" android:id="@id/btnCreateNewConfDate" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="Pilih Tanggal" />
+                <TextView android:textColor="@*android:color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="8.0dip" android:text="Jam" fontPath="fonts/MyriadPro-Semibold.otf" />
+                <EditText android:enabled="false" android:id="@id/edtCreateNewConfTime" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+                <Button android:textColor="@*android:color/black" android:layout_gravity="right" android:id="@id/btnCreateNewConfTime" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="Pilih Jam" />
+            </LinearLayout>
+            <TextView android:textColor="@*android:color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="8.0dip" android:text="Durasi" fontPath="fonts/MyriadPro-Semibold.otf" />
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Spinner android:enabled="true" android:id="@id/spnCreateNewConfDurationHour" android:layout_width="fill_parent" android:layout_height="48.0dip" android:singleLine="true" android:layout_weight="0.5" />
+                <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:text="Jam" android:layout_weight="0.5" fontPath="fonts/MyriadPro-Semibold.otf" />
+                <Spinner android:enabled="true" android:id="@id/spnCreateNewConfDurationMinutes" android:layout_width="fill_parent" android:layout_height="48.0dip" android:singleLine="true" android:layout_weight="0.5" android:inputType="numberSigned" />
+                <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:text="Menit" android:layout_weight="0.5" fontPath="fonts/MyriadPro-Semibold.otf" />
+            </LinearLayout>
+            <TextView android:textColor="@*android:color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="8.0dip" android:text="Jumlah Peserta" fontPath="fonts/MyriadPro-Semibold.otf" />
+            <EditText android:enabled="true" android:id="@id/edtCreateNewConfTotalParticipant" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:inputType="numberSigned" />
+        </LinearLayout>
+    </ScrollView>
+    <Button android:textColor="@*android:color/white" android:id="@id/btnCreateNewConference" android:background="@drawable/btn_general" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="10.0dip" android:text="Submit" />
+</LinearLayout>

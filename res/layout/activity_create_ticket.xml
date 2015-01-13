@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@*android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/spnCreateTicketNoProduk" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="Nomor Produk" fontPath="fonts/MyriadPro-Semibold.otf" />
+            <EditText android:enabled="false" android:id="@id/edtCreateTicketNoProduct" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:singleLine="true" android:inputType="textCapWords" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="Jenis Tiket" fontPath="fonts/MyriadPro-Semibold.otf" />
+            <Spinner android:id="@id/spnCreateTicketJenisTiket" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginBottom="10.0dip" android:spinnerMode="dropdown" />
+            <LinearLayout android:orientation="vertical" android:id="@id/lnPengaduanLevel1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="Jenis Pengaduan (Level 1)" fontPath="fonts/MyriadPro-Semibold.otf" />
+                <Spinner android:id="@id/spnCreateTicketJenisPengaduanLvl1" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginBottom="10.0dip" android:spinnerMode="dropdown" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/lnPengaduanLevel2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="Jenis Pengaduan Detail (Level2)" fontPath="fonts/MyriadPro-Semibold.otf" />
+                <Spinner android:id="@id/spnCreateTicketJenisPengaduanDetil" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginBottom="10.0dip" android:spinnerMode="dropdown" />
+            </LinearLayout>
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="Lokasi Pelapor" fontPath="fonts/MyriadPro-Semibold.otf" />
+            <EditText android:id="@id/edtCreateTicketLokasiPelapor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:inputType="textCapSentences" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="Nama Pelapor" fontPath="fonts/MyriadPro-Semibold.otf" />
+            <EditText android:enabled="true" android:id="@id/edtCreateTicketNamaPelapor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:singleLine="true" android:inputType="textCapWords" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="Nomor Kontak Pelapor" fontPath="fonts/MyriadPro-Semibold.otf" />
+            <EditText android:id="@id/edtCreateTicketNomorKontakPelapor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:singleLine="true" android:inputType="phone" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="Alamat Email Pelapor" fontPath="fonts/MyriadPro-Semibold.otf" />
+            <EditText android:id="@id/edtCreateTicketEmailPelapor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:singleLine="true" android:inputType="textEmailAddress" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="Keterangan Keluhan" fontPath="fonts/MyriadPro-Semibold.otf" />
+            <EditText android:id="@id/edtCreateTicketKeluhan" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:singleLine="true" android:inputType="textEmailAddress" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textColor="@*android:color/white" android:id="@id/btnCreateTicketCancel" android:background="@drawable/btn_general" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="Cancel" android:layout_weight="0.5" />
+        <View android:layout_width="1.0dip" android:layout_height="48.0dip" />
+        <Button android:textColor="@*android:color/white" android:id="@id/btnCreateTicketSubmit" android:background="@drawable/btn_general" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="Submit" android:layout_weight="0.5" />
+    </LinearLayout>
+</LinearLayout>

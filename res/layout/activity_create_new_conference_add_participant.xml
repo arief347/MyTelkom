@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@*android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textColor="@*android:color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="8.0dip" android:text="Nama" fontPath="fonts/MyriadPro-Semibold.otf" />
+        <EditText android:id="@id/edtCreateNewConfAddParticipantName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:inputType="textCapWords" />
+        <TextView android:textColor="@*android:color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="8.0dip" android:text="Email" fontPath="fonts/MyriadPro-Semibold.otf" />
+        <EditText android:id="@id/edtCreateNewConfAddParticipantEmail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:inputType="textEmailAddress" />
+        <TextView android:textColor="@*android:color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="8.0dip" android:text="No Handphone" fontPath="fonts/MyriadPro-Semibold.otf" />
+        <EditText android:id="@id/edtCreateNewConfAddParticipantNoHp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:inputType="phone" />
+    </LinearLayout>
+    <Button android:textColor="@*android:color/white" android:id="@id/btnCreateNewConferenceAddParticipant" android:background="@drawable/btn_general" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="10.0dip" android:text="Tambahkan" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/lnEditParticipant" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <Button android:textColor="@*android:color/white" android:id="@id/btnCreateNewConferenceDeleteParticipant" android:background="@drawable/btn_general" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="10.0dip" android:text="Hapus" android:layout_weight="0.5" />
+        <View android:background="@*android:color/white" android:layout_width="1.0dip" android:layout_height="48.0dip" />
+        <Button android:textColor="@*android:color/white" android:id="@id/btnCreateNewConferenceUpdateParticipant" android:background="@drawable/btn_general" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="10.0dip" android:text="Update" android:layout_weight="0.5" />
+    </LinearLayout>
+</LinearLayout>

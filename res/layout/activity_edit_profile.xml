@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="Nama Lengkap" fontPath="fonts/MyriadPro-Semibold.otf" />
+            <EditText android:id="@id/edt_profile_nama_lengkap" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:singleLine="true" android:inputType="textCapWords" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="Nama Ibu Kandung" fontPath="fonts/MyriadPro-Semibold.otf" />
+            <EditText android:id="@id/edt_profile_nama_ibu_kandung" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:singleLine="true" android:inputType="textCapWords" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="Tanggal Lahir" fontPath="fonts/MyriadPro-Semibold.otf" />
+            <LinearLayout android:orientation="horizontal" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+                <EditText android:enabled="false" android:id="@id/edt_profile_tgl_lahir" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_marginBottom="8.0dip" android:singleLine="true" android:layout_weight="0.7" android:inputType="textCapWords" />
+                <Button android:id="@id/btn_profile_pilih_tgl" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="Pilih" />
+            </LinearLayout>
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="Kota Kelahiran" fontPath="fonts/MyriadPro-Semibold.otf" />
+            <EditText android:id="@id/edt_profile_kota_kelahiran" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:singleLine="true" android:inputType="textCapWords" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="Jenis Kelamin" fontPath="fonts/MyriadPro-Semibold.otf" />
+            <RadioGroup android:orientation="horizontal" android:id="@id/rbProfileSex" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+                <RadioButton android:id="@id/rb_profile_man" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Laki-laki" android:layout_weight="0.5" />
+                <RadioButton android:id="@id/rb_profile_women" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Perempuan" android:layout_weight="0.5" />
+            </RadioGroup>
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="Tipe Identitas" fontPath="fonts/MyriadPro-Semibold.otf" />
+            <Spinner android:id="@id/spn_profile_tipe_identitas" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginBottom="8.0dip" android:spinnerMode="dropdown" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="Nomor Identitas" fontPath="fonts/MyriadPro-Semibold.otf" />
+            <EditText android:id="@id/edt_profile_no_identitas" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:singleLine="true" android:inputType="number" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="Alamat" fontPath="fonts/MyriadPro-Semibold.otf" />
+            <EditText android:id="@id/edt_profile_alamat" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginBottom="8.0dip" android:singleLine="true" android:inputType="textCapSentences" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="Kota" fontPath="fonts/MyriadPro-Semibold.otf" />
+            <LinearLayout android:orientation="horizontal" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+                <AutoCompleteTextView android:id="@id/au_profile_kota" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="Propinsi" fontPath="fonts/MyriadPro-Semibold.otf" />
+            <EditText android:id="@id/edt_profile_propinsi" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginBottom="8.0dip" android:singleLine="false" android:inputType="textCapWords" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="Kode Pos" fontPath="fonts/MyriadPro-Semibold.otf" />
+            <EditText android:id="@id/edt_profile_kodepos" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:singleLine="true" android:inputType="number" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="Nomor FLexi" fontPath="fonts/MyriadPro-Semibold.otf" />
+            <EditText android:id="@id/edt_profile_noflexi" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:singleLine="true" android:inputType="phone" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="Mobile Phone" fontPath="fonts/MyriadPro-Semibold.otf" />
+            <EditText android:id="@id/edt_profile_mobile" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:singleLine="true" android:inputType="phone" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="Tingkat Pendidikan" fontPath="fonts/MyriadPro-Semibold.otf" />
+            <Spinner android:id="@id/spn_profile_pendidikan" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginBottom="12.0dip" android:spinnerMode="dropdown" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="Hobi" fontPath="fonts/MyriadPro-Semibold.otf" />
+            <Spinner android:id="@id/spn_profile_hobi" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginBottom="12.0dip" android:spinnerMode="dropdown" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="Profesi" fontPath="fonts/MyriadPro-Semibold.otf" />
+            <Spinner android:id="@id/spn_profile_tipe_profesi" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginBottom="12.0dip" android:spinnerMode="dropdown" />
+        </LinearLayout>
+    </ScrollView>
+    <Button android:textColor="@*android:color/white" android:layout_gravity="right" android:id="@id/btn_profile_submit" android:background="@drawable/btn_general" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="15.0dip" android:text="Submit" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/infImgItemConferenceRoom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/android_dashboard_ptsn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/infImgItemConferenceRoom" android:layout_centerVertical="true">
+        <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@*android:color/black" android:gravity="left" android:layout_gravity="center" android:id="@id/txtInfItemConferenceNoTelp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="Telkom Audio Conference" />
+        <TextView android:textSize="13.0sp" android:textStyle="normal" android:textColor="@*android:color/black" android:gravity="left" android:layout_gravity="center" android:id="@id/txtInfItemConferenceName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="Telkom Audio Conference" />
+        <TextView android:textSize="13.0sp" android:textStyle="normal" android:textColor="@*android:color/black" android:gravity="left" android:layout_gravity="center" android:id="@id/txtInfItemConferenceEmail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="Telkom Audio Conference" />
+    </LinearLayout>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/android_dashboard_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

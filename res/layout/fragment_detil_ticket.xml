@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@*android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/indicator" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/lnDetilTicketContent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true">
+        <TextView android:textSize="16.0sp" android:textColor="@*android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/txtDetilTiketNo" android:background="@*android:color/black" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="009898088" android:singleLine="true" fontPath="fonts/MyriadPro-Semibold.otf" />
+        <TextView android:textSize="20.0sp" android:textColor="@*android:color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/txtDetilTiketStatus" android:background="@*android:color/white" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Ticket Status" android:singleLine="true" />
+        <View android:background="@color/abu_terang" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:padding="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/rlDetilTiket" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@*android:color/black" android:gravity="left" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Detail Ticket" android:singleLine="true" fontPath="fonts/MyriadPro-Semibold.otf" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/android_dashboard_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ScrollView android:id="@id/scDetilTiket" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textStyle="bold" android:gravity="left" android:layout_gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="Nomor Produk" fontPath="fonts/MyriadPro-Semibold.otf" />
+                        <TextView android:gravity="left" android:layout_gravity="left" android:id="@id/txtDetilTiketNomorProduk" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="1311123123123" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textStyle="bold" android:gravity="left" android:layout_gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="Jenis Tiket" fontPath="fonts/MyriadPro-Semibold.otf" />
+                        <TextView android:gravity="left" android:layout_gravity="left" android:id="@id/txtDetilJenisTiket" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Pengaduan Teknis" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textStyle="bold" android:gravity="left" android:layout_gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="Jenis Pengaduan" fontPath="fonts/MyriadPro-Semibold.otf" />
+                        <TextView android:gravity="left" android:layout_gravity="left" android:id="@id/txtDetilJenisPengaduan" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Speedy Retail" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textStyle="bold" android:gravity="left" android:layout_gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="Jenis Pengaduan Detail" fontPath="fonts/MyriadPro-Semibold.otf" />
+                        <TextView android:gravity="left" android:layout_gravity="left" android:id="@id/txtDetilTiketJenisPengaduanDetil" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Intermitten/Putus-putus" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textStyle="bold" android:gravity="left" android:layout_gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="Lokasi Pelapor" fontPath="fonts/MyriadPro-Semibold.otf" />
+                        <TextView android:gravity="left" android:layout_gravity="left" android:id="@id/txtDetilTiketLokasiPelapor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Cihampelas" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textStyle="bold" android:gravity="left" android:layout_gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="Nama Pelapor" fontPath="fonts/MyriadPro-Semibold.otf" />
+                        <TextView android:gravity="left" android:layout_gravity="left" android:id="@id/txtDetilTiketNamaPelapor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Irvan Hasbi" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textStyle="bold" android:gravity="left" android:layout_gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="Nomor Kontak Pelapor" fontPath="fonts/MyriadPro-Semibold.otf" />
+                        <TextView android:gravity="left" android:layout_gravity="left" android:id="@id/txtDetilTiketNomorKontakPelapor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="082121212093" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+        <View android:background="@color/abu_terang" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:padding="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/rlDetilTicketTracking" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@*android:color/black" android:gravity="left" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tracking Status" android:singleLine="true" fontPath="fonts/MyriadPro-Semibold.otf" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/android_dashboard_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/lnDetilTicketTracking" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ListView android:id="@id/lvDetilTicketTracking" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@*android:color/transparent" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/abu_terang" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+</RelativeLayout>
